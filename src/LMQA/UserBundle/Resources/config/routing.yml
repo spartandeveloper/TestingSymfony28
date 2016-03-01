@@ -1,0 +1,25 @@
+lmqa_user_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: LMQAUserBundle:Default:index }
+
+lmqa_user_index:
+    path:     /user/index
+    defaults: { _controller: LMQAUserBundle:User:index }
+    
+lmqa_user_add:
+    path:     /user/add
+    defaults: { _controller: LMQAUserBundle:User:add }
+    
+lmqa_user_edit:
+    path:     /user/edi{id}
+    defaults: { _controller: LMQAUserBundle:User:edit }    
+    
+lmqa_user_view:
+    path:     /user/view{id}
+    defaults: { _controller: LMQAUserBundle:User:view } 
+    
+lmqa_user_delete:
+    path:     /user/delete{id}
+    defaults: { _controller: LMQAUserBundle:User:delete }        
+    
+    

@@ -1,0 +1,7 @@
+lmqa_user:
+    resource: "@LMQAUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
