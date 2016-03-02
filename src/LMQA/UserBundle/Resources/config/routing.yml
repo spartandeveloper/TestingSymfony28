@@ -2,7 +2,7 @@ lmqa_user_homepage:
     path:     /hello/{name}
     defaults: { _controller: LMQAUserBundle:Default:index }
 
-lmqa_user_index:
+lmqa_user_index: # sirve como referencia cuando se usa path('lmqa_user_index') desde un .html.twig #
     path:     /user/index
     defaults: { _controller: LMQAUserBundle:User:index }
     

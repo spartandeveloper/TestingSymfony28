@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Asignaciones de tareas{% endblock %}</title>
+        {% block stylesheets %}
+            {# para boostrap inicio #}
+            <link type="text/css" rel="stylesheet" href="{{ asset('css/bootstrap-3.3.6.min.css') }}" />
+            {# para boostrap fin #}
+            <link type="text/css" rel="stylesheet" href="{{ asset('css/global.css') }}" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}
+            {{ include('menu.html.twig') }}
+        {% endblock %}
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('js/jquery-1.12.1.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/bootstrap-3.3.6.min.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
